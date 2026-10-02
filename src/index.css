@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 65% 25%, rgba(219, 234, 254, 0.45) 0%, rgba(248, 250, 252, 0) 70%);
+}
+
+/* Subtle modern SaaS custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 26px;
+  bottom: -12px;
+  width: 2px;
+  background-color: #e2e8f0;
+  z-index: 0;
+}
+.timeline-item:last-child .timeline-line::before {
+  display: none;
+}

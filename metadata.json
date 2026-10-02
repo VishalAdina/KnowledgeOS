@@ -1,0 +1,6 @@
+{
+  "name": "KnowledgeOS - Production-Grade Agentic RAG Platform",
+  "description": "Enterprise agentic RAG orchestrator, real-time observability, guardrails, and telemetry platform for production AI teams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
